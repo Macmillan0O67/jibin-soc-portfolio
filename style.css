@@ -1,1 +1,66 @@
 
+body {
+    margin: 0;
+    font-family: 'Courier New', monospace;
+    background-color: black;
+    color: #00ffcc;
+    overflow-x: hidden;
+}
+
+header {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.glow {
+    font-size: 3rem;
+    color: #00ffcc;
+    text-shadow: 0 0 20px #00ffcc;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 1px solid #00ffcc;
+    color: #00ffcc;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #00ffcc;
+    color: black;
+}
+
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.card, .project-card {
+    border: 1px solid #00ffcc;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.card:hover, .project-card:hover {
+    background-color: #001f1f;
+    transform: scale(1.05);
+}
+
+a {
+    color: #00ffcc;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #00ffcc;
+}
