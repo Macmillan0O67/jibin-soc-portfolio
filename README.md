@@ -77,17 +77,7 @@ Passionate about bridging **Blue Team defense strategies** with **Red Team simul
 
 ---
 
-## 🎨 Portfolio Features
 
-- Animated Cybersecurity Theme
-- Matrix Background Effect
-- Neon UI Design
-- Responsive Layout
-- GitHub Hosted
-- Downloadable Resume
-- Direct Links to LinkedIn & Projects
-
----
 
 ## 🚀 Live Portfolio
 
