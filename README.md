@@ -1,6 +1,6 @@
-# 🔐 Jibin Jose | SOC Analyst & Purple Team Enthusiast
+# 🔐 Jibin Jose | SOC Analyst
 
-🚀  Portfolio Website  
+🚀 High-End Animated Cybersecurity Portfolio Website  
 Built with HTML, CSS, and JavaScript  
 Hosted on GitHub Pages  
 
@@ -8,7 +8,7 @@ Hosted on GitHub Pages
 
 ## 👨‍💻 About Me
 
-Certified **CompTIA Security+** and **EC-Council Certified SOC Analyst (CSA)** professional with hands-on experience in:
+Certified cybersecurity professional with hands-on experience in:
 
 - SOC Level 1 Monitoring
 - SIEM Alert Triage
@@ -18,7 +18,33 @@ Certified **CompTIA Security+** and **EC-Council Certified SOC Analyst (CSA)** p
 - MITRE ATT&CK Mapping
 - Phishing & Email Threat Investigation
 
-Passionate about bridging **Blue Team defense strategies** with **Red Team simulation techniques** to strengthen detection engineering and security posture.
+Passionate about strengthening detection engineering and bridging Blue Team defense with Red Team simulation methodologies.
+
+---
+
+## 🏆 Certifications & Verification
+
+### 🛡 CompTIA Security+
+🔗 Verification Link:  
+https://cp.certmetrics.com/CompTIA/en/public/verify/credential/34b130ee20174609bdfe4afd226360b7  
+
+---
+
+### 🛡 EC-Council Certified SOC Analyst (CSA)
+🔗 Verification Link:  
+https://aspen.eccouncil.org/VerifyBadge?&type=certification&a=sQ+cIn+W5iZXTTLXSvXKdf6KYpFVDsOMvapnUvWgJpI=  
+
+---
+
+### 🌐 Cisco Introduction to Cybersecurity
+🔗 Credly Badge:  
+https://www.credly.com/badges/183347d4-e134-4124-a2f2-2f43c3217762/public_url  
+
+---
+
+### 🏅 Full Certification Profile
+🔗 Credly Account:  
+https://www.credly.com/users/jibin-jose.423bd65f  
 
 ---
 
@@ -27,18 +53,18 @@ Passionate about bridging **Blue Team defense strategies** with **Red Team simul
 ### 🔎 SOC Analyst Home Lab
 - Built enterprise-style SOC environment using Splunk
 - Configured Windows & Linux log ingestion
-- Created custom detection rules for brute-force attempts
-- Performed alert triage and incident documentation
-- Mapped threats to MITRE ATT&CK framework
+- Created custom detection rules
+- Detected brute-force attempts
+- Mapped threats to MITRE ATT&CK
+- Documented incidents with remediation steps
 
 ### 🌐 Web Application Vulnerability Assessment
-- Identified SQL Injection, XSS, Security Misconfigurations
+- Identified SQL Injection, XSS, and misconfigurations
 - Used Burp Suite & OpenVAS
-- Delivered professional vulnerability reports
-- Recommended mitigation strategies aligned with best practices
+- Delivered structured vulnerability reports
 
 ### 📧 Phishing & Email Threat Investigation
-- Conducted email header analysis
+- Performed email header analysis
 - Investigated malicious URLs
 - Classified phishing attempts
 - Created SOC-style incident reports
@@ -50,7 +76,7 @@ Passionate about bridging **Blue Team defense strategies** with **Red Team simul
 **SOC Operations**
 - SIEM Monitoring
 - Alert Triage
-- Incident Detection & Response
+- Incident Response
 - Threat Analysis
 
 **SIEM & Logs**
@@ -65,7 +91,7 @@ Passionate about bridging **Blue Team defense strategies** with **Red Team simul
 - Nmap
 - Wireshark
 
-**Frameworks & Standards**
+**Frameworks**
 - MITRE ATT&CK
 - OWASP Top 10
 
@@ -77,44 +103,20 @@ Passionate about bridging **Blue Team defense strategies** with **Red Team simul
 
 ---
 
-
-
 ## 🚀 Live Portfolio
 
 🔗 https://Macmillan0O67.github.io/jibin-soc-portfolio/
 
 ---
 
-## 🏗 Project Structure
-
-      jibin-soc-portfolio/
-      │
-      ├── index.html
-      ├── style.css
-      ├── script.js
-      ├── RESUME_JIBIN_JOSE_SOC_ANALYST.pdf
-      └── README.md
-
----
-
-## 🌍 Deployment
-
-Hosted using **GitHub Pages**
-
-Steps:
-1. Push files to repository
-2. Go to Settings → Pages
-3. Select branch: `main`
-4. Deploy from root folder
-
----
-
-## 📜 Certifications
-
-- CompTIA Security+
-- EC-Council Certified SOC Analyst (CSA)
-- REDTEAM Cybersecurity Internship
-
+## 📂 Project Structure
+            jibin-soc-portfolio/
+            │
+            ├── index.html
+            ├── style.css
+            ├── script.js
+            ├── RESUME_JIBIN_JOSE_SOC_ANALYST.pdf
+            └── README.md
 ---
 
 ## 📬 Contact
@@ -127,15 +129,14 @@ Steps:
 
 ## 🎯 Career Objective
 
-Seeking SOC Analyst / Blue Team / Purple Team roles where I can:
+Seeking SOC Analyst / Blue Team / Purple Team roles where I can contribute to:
 
-- Monitor and investigate security alerts
-- Improve detection engineering
-- Strengthen incident response processes
-- Contribute to continuous security improvement
+- 24x7 SOC monitoring operations
+- Detection engineering improvements
+- Incident response workflows
+- Continuous security posture enhancement
 
 ---
 
-⭐ If you find this portfolio useful, feel free to connect or collaborate!
-
-
+⭐ Open to collaboration and security discussions.
+            
