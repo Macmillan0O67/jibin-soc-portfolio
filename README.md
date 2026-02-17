@@ -1,6 +1,6 @@
 # 🔐 Jibin Jose | SOC Analyst & Purple Team Enthusiast
 
-🚀 High-End Animated Cybersecurity Portfolio Website  
+🚀  Portfolio Website  
 Built with HTML, CSS, and JavaScript  
 Hosted on GitHub Pages  
 
