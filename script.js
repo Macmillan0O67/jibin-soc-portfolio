@@ -1,21 +1,17 @@
-// Smooth Fade-In Animation on Scroll
+// Smooth scroll reveal animation
 
-document.addEventListener("DOMContentLoaded", function () {
+const sections = document.querySelectorAll('.fade-section');
 
-    const elements = document.querySelectorAll('.fade-in');
-
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-            }
-        });
-    }, {
-        threshold: 0.1
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
     });
+}, {
+    threshold: 0.2
+});
 
-    elements.forEach(element => {
-        observer.observe(element);
-    });
-
+sections.forEach(section => {
+    observer.observe(section);
 });
