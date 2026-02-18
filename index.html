@@ -3,66 +3,106 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jibin Jose | Cyber Security Expert</title>
-
+<title>root@jibin:~# SOC Analyst</title>
 <link rel="stylesheet" href="style.css">
-
-<!-- GSAP -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-
-<!-- Three.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-
-<!-- Particles -->
-<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-
 </head>
 <body>
 
-<div id="particles-js"></div>
-<div class="cursor-glow"></div>
+<div class="matrix-bg"></div>
 
-<!-- HERO -->
-<section class="section hero">
+<div class="terminal">
 
-    <div class="hero-text">
-        <h1 class="glitch" data-text="JIBIN JOSE">JIBIN JOSE</h1>
-        <h2>SOC Analyst | Purple Team Enthusiast</h2>
-        <p>Provide Advanced Cyber Security Solutions</p>
-        <button class="btn">Explore</button>
+    <div class="terminal-header">
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+        <span class="title">root@jibin:~#</span>
     </div>
 
-    <div id="avatar3d"></div>
+    <div class="terminal-body">
 
-</section>
+        <p><span class="prompt">root@jibin:~#</span> whoami</p>
+        <p class="output">Jibin Jose - SOC Analyst | Purple Team Enthusiast</p>
 
-<!-- SERVICES -->
-<section class="section services">
-    <h2 class="section-title">Cyber Expertise</h2>
+        <p><span class="prompt">root@jibin:~#</span> cat profile.txt</p>
+        <p class="output">
+Entry-Level SOC Level 1 Analyst with hands-on experience in SIEM monitoring,
+alert triage, log correlation, vulnerability assessment, and incident detection.
+CompTIA Security+ and EC-Council CSA Certified.
+        </p>
 
-    <div class="cards">
-        <div class="card">SIEM Monitoring</div>
-        <div class="card">Threat Detection</div>
-        <div class="card">MITRE ATT&CK Mapping</div>
-        <div class="card">Incident Response</div>
+        <p><span class="prompt">root@jibin:~#</span> show --certifications</p>
+
+        <div class="cert-card">
+            <h3>CompTIA Security+</h3>
+            <a href="https://cp.certmetrics.com/CompTIA/en/public/verify/credential/34b130ee20174609bdfe4afd226360b7" target="_blank">Verify Credential</a>
+        </div>
+
+        <div class="cert-card">
+            <h3>EC-Council Certified SOC Analyst (CSA)</h3>
+            <a href="https://aspen.eccouncil.org/VerifyBadge?&type=certification&a=sQ+cIn+W5iZXTTLXSvXKdf6KYpFVDsOMvapnUvWgJpI=" target="_blank">Verify Credential</a>
+        </div>
+
+        <div class="cert-card">
+            <h3>Cisco Introduction to Cybersecurity</h3>
+            <a href="https://www.credly.com/badges/183347d4-e134-4124-a2f2-2f43c3217762/public_url" target="_blank">View Badge</a>
+        </div>
+
+        <p><span class="prompt">root@jibin:~#</span> ls projects/</p>
+
+        <div class="project">
+            <h3>SOC Analyst Home Lab</h3>
+            <ul>
+                <li>Configured Splunk SIEM</li>
+                <li>Ingested Windows & Linux Logs</li>
+                <li>Created Brute Force Detection Alerts</li>
+                <li>Mapped Threats to MITRE ATT&CK</li>
+                <li>Documented Incident Reports</li>
+            </ul>
+        </div>
+
+        <div class="project">
+            <h3>Web App Vulnerability Assessment</h3>
+            <ul>
+                <li>Identified SQL Injection & XSS</li>
+                <li>Used Burp Suite & OpenVAS</li>
+                <li>Generated Risk Reports</li>
+            </ul>
+        </div>
+
+        <div class="project">
+            <h3>Phishing Detection & Email Analysis</h3>
+            <ul>
+                <li>Email Header Analysis</li>
+                <li>Malicious URL Investigation</li>
+                <li>SOC-Style Documentation</li>
+            </ul>
+        </div>
+
+        <p><span class="prompt">root@jibin:~#</span> systemctl status skills</p>
+
+        <div class="skills">
+SOC Operations: SIEM Monitoring | Alert Triage | Incident Response | MITRE ATT&CK  
+Tools: Splunk | Wazuh | Burp Suite | OpenVAS  
+Networking: TCP/IP | DNS | HTTP | SSL/TLS  
+Programming: Python | SQL | JavaScript  
+        </div>
+
+        <p><span class="prompt">root@jibin:~#</span> tail -f security.log</p>
+
+        <div class="log-feed" id="logFeed"></div>
+
+        <p><span class="prompt">root@jibin:~#</span> contact --info</p>
+        <p class="output">
+Email: jibinjosebiju@gmail.com  
+GitHub: https://github.com/Macmillan0O67  
+LinkedIn: https://www.linkedin.com/in/jibin-jose-0667jj
+        </p>
+
     </div>
 
-    <div class="neon-line"></div>
-</section>
+</div>
 
-<!-- DASHBOARD -->
-<section class="section dashboard">
-    <h2>Interactive Cyber Dashboard</h2>
-    <div class="dashboard-ui">
-        <div class="widget pulse"></div>
-        <div class="widget rotate"></div>
-        <div class="widget"></div>
-    </div>
-</section>
-
-<script src="avatar.js"></script>
 <script src="script.js"></script>
-
 </body>
 </html>
