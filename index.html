@@ -1,107 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>root@jibin:~# SOC Analyst</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Jibin Jose | SOC Analyst & Purple Team Enthusiast</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="matrix-bg"></div>
+<header>
+    <h1>Jibin Jose</h1>
+    <p>SOC Analyst | Blue Team | Purple Team Enthusiast</p>
+    <a href="resume.pdf" class="btn">Download Resume</a>
+</header>
 
-<div class="terminal">
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        Entry-level SOC Analyst with hands-on experience in SIEM monitoring,
+        alert triage, log analysis, and incident response. Passionate about 
+        Blue Team operations and Purple Team simulations using MITRE ATT&CK framework.
+        Skilled in identifying threats, analyzing logs, and responding to security incidents.
+    </p>
+</section>
 
-    <div class="terminal-header">
-        <span class="dot red"></span>
-        <span class="dot yellow"></span>
-        <span class="dot green"></span>
-        <span class="title">root@jibin:~#</span>
+<section id="skills">
+    <h2>Technical Skills</h2>
+    <div class="skills-container">
+        <div class="skill-box">SIEM (Splunk / Wazuh)</div>
+        <div class="skill-box">Incident Response</div>
+        <div class="skill-box">MITRE ATT&CK</div>
+        <div class="skill-box">Log Analysis</div>
+        <div class="skill-box">Network Security</div>
+        <div class="skill-box">Threat Detection</div>
+        <div class="skill-box">OWASP Top 10</div>
+        <div class="skill-box">Nmap / Wireshark</div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project">
+        <h3>SOC Home Lab</h3>
+        <p>
+            Built a simulated SOC environment using Wazuh SIEM, Windows Server,
+            and Kali Linux. Configured log forwarding, monitored brute-force attacks,
+            and created custom detection rules.
+        </p>
+        <a href="https://github.com/Macmillan0O67" target="_blank">View on GitHub</a>
     </div>
 
-    <div class="terminal-body">
-
-        <p><span class="prompt">root@jibin:~#</span> whoami</p>
-        <p class="output">Jibin Jose - SOC Analyst | Purple Team Enthusiast</p>
-
-        <p><span class="prompt">root@jibin:~#</span> cat profile.txt</p>
-        <p class="output">
-Entry-Level SOC Level 1 Analyst with hands-on experience in SIEM monitoring,
-alert triage, log correlation, vulnerability assessment, and incident detection.
-CompTIA Security+ and EC-Council CSA Certified.
+    <div class="project">
+        <h3>Purple Team Attack Simulation</h3>
+        <p>
+            Simulated red team attacks using Metasploit and analyzed detection
+            coverage in SIEM. Mapped attack techniques to MITRE ATT&CK and
+            improved detection rules.
         </p>
-
-        <p><span class="prompt">root@jibin:~#</span> show --certifications</p>
-
-        <div class="cert-card">
-            <h3>CompTIA Security+</h3>
-            <a href="https://cp.certmetrics.com/CompTIA/en/public/verify/credential/34b130ee20174609bdfe4afd226360b7" target="_blank">Verify Credential</a>
-        </div>
-
-        <div class="cert-card">
-            <h3>EC-Council Certified SOC Analyst (CSA)</h3>
-            <a href="https://aspen.eccouncil.org/VerifyBadge?&type=certification&a=sQ+cIn+W5iZXTTLXSvXKdf6KYpFVDsOMvapnUvWgJpI=" target="_blank">Verify Credential</a>
-        </div>
-
-        <div class="cert-card">
-            <h3>Cisco Introduction to Cybersecurity</h3>
-            <a href="https://www.credly.com/badges/183347d4-e134-4124-a2f2-2f43c3217762/public_url" target="_blank">View Badge</a>
-        </div>
-
-        <p><span class="prompt">root@jibin:~#</span> ls projects/</p>
-
-        <div class="project">
-            <h3>SOC Analyst Home Lab</h3>
-            <ul>
-                <li>Configured Splunk SIEM</li>
-                <li>Ingested Windows & Linux Logs</li>
-                <li>Created Brute Force Detection Alerts</li>
-                <li>Mapped Threats to MITRE ATT&CK</li>
-                <li>Documented Incident Reports</li>
-            </ul>
-        </div>
-
-        <div class="project">
-            <h3>Web App Vulnerability Assessment</h3>
-            <ul>
-                <li>Identified SQL Injection & XSS</li>
-                <li>Used Burp Suite & OpenVAS</li>
-                <li>Generated Risk Reports</li>
-            </ul>
-        </div>
-
-        <div class="project">
-            <h3>Phishing Detection & Email Analysis</h3>
-            <ul>
-                <li>Email Header Analysis</li>
-                <li>Malicious URL Investigation</li>
-                <li>SOC-Style Documentation</li>
-            </ul>
-        </div>
-
-        <p><span class="prompt">root@jibin:~#</span> systemctl status skills</p>
-
-        <div class="skills">
-SOC Operations: SIEM Monitoring | Alert Triage | Incident Response | MITRE ATT&CK  
-Tools: Splunk | Wazuh | Burp Suite | OpenVAS  
-Networking: TCP/IP | DNS | HTTP | SSL/TLS  
-Programming: Python | SQL | JavaScript  
-        </div>
-
-        <p><span class="prompt">root@jibin:~#</span> tail -f security.log</p>
-
-        <div class="log-feed" id="logFeed"></div>
-
-        <p><span class="prompt">root@jibin:~#</span> contact --info</p>
-        <p class="output">
-Email: jibinjosebiju@gmail.com  
-GitHub: https://github.com/Macmillan0O67  
-LinkedIn: https://www.linkedin.com/in/jibin-jose-0667jj
-        </p>
-
+        <a href="https://github.com/Macmillan0O67" target="_blank">View on GitHub</a>
     </div>
 
-</div>
+</section>
+
+<section id="case-study">
+    <h2>Incident Case Study</h2>
+    <p>
+        Investigated simulated brute-force login attack.
+        Identified failed login patterns in logs,
+        correlated source IP addresses,
+        blocked malicious IP,
+        and documented findings in incident report format.
+    </p>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email: your-email@example.com</p>
+    <p>
+        <a href="https://www.linkedin.com/in/jibin-jose-282ab7318/" target="_blank">LinkedIn</a> |
+        <a href="https://github.com/Macmillan0O67" target="_blank">GitHub</a>
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 Jibin Jose | SOC Analyst Portfolio</p>
+</footer>
 
 <script src="script.js"></script>
 </body>
