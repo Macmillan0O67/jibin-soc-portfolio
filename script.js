@@ -1,23 +1,36 @@
-const logs = [
-"[INFO] Splunk Alert: Failed Login Attempt Detected",
-"[INFO] Investigating Suspicious IP 192.168.1.45",
-"[WARNING] SQL Injection Pattern Detected",
-"[INFO] Phishing Email Classified as Malicious",
-"[ALERT] Brute Force Attempt Blocked",
-"[INFO] MITRE ATT&CK T1110 Mapped"
-];
+const canvas = document.createElement("canvas");
+document.querySelector(".matrix-bg").appendChild(canvas);
 
-const logFeed = document.getElementById("logFeed");
+const ctx = canvas.getContext("2d");
 
-function addLog() {
-    const randomLog = logs[Math.floor(Math.random() * logs.length)];
-    const p = document.createElement("p");
-    p.textContent = randomLog;
-    logFeed.appendChild(p);
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
 
-    if (logFeed.children.length > 8) {
-        logFeed.removeChild(logFeed.firstChild);
+const letters = "01SOCSECURITY";
+const fontSize = 14;
+const columns = canvas.width / fontSize;
+
+const drops = [];
+
+for(let x = 0; x < columns; x++)
+    drops[x] = 1;
+
+function draw() {
+    ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    ctx.fillStyle = "#00ffcc";
+    ctx.font = fontSize + "px monospace";
+
+    for(let i = 0; i < drops.length; i++) {
+        const text = letters.charAt(Math.floor(Math.random() * letters.length));
+        ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+
+        if(drops[i] * fontSize > canvas.height && Math.random() > 0.975)
+            drops[i] = 0;
+
+        drops[i]++;
     }
 }
 
-setInterval(addLog, 1500);
+setInterval(draw, 35);
