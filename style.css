@@ -1,53 +1,65 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #0f172a;
-    color: white;
+    font-family: 'Courier New', monospace;
+    background-color: black;
+    color: #00ffcc;
+    overflow-x: hidden;
 }
 
 header {
     text-align: center;
-    padding: 50px;
-    background: linear-gradient(to right, #0ea5e9, #6366f1);
+    padding: 80px 20px;
+}
+
+.glow {
+    font-size: 3rem;
+    color: #00ffcc;
+    text-shadow: 0 0 20px #00ffcc;
 }
 
 .btn {
-    background: white;
-    color: black;
+    display: inline-block;
+    margin-top: 20px;
     padding: 10px 20px;
+    border: 1px solid #00ffcc;
+    color: #00ffcc;
     text-decoration: none;
-    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #00ffcc;
+    color: black;
 }
 
 section {
-    padding: 40px;
+    padding: 50px;
+    text-align: center;
 }
 
-.skills-container {
-    display: flex;
-    flex-wrap: wrap;
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
 }
 
-.skill-box {
-    background: #1e293b;
-    padding: 10px;
-    margin: 5px;
-    border-radius: 5px;
-}
-
-.project {
-    background: #1e293b;
+.card, .project-card {
+    border: 1px solid #00ffcc;
     padding: 20px;
-    margin-bottom: 15px;
-    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.card:hover, .project-card:hover {
+    background-color: #001f1f;
+    transform: scale(1.05);
 }
 
 a {
-    color: #38bdf8;
+    color: #00ffcc;
 }
 
 footer {
     text-align: center;
     padding: 20px;
-    background: #111827;
+    border-top: 1px solid #00ffcc;
 }
