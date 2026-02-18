@@ -8,7 +8,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
-
 * {
   margin: 0;
   padding: 0;
@@ -91,6 +90,8 @@ body::before {
   border-radius: 5px;
   transition: 0.3s ease;
   font-size: 0.9rem;
+  display: inline-block;
+  margin-top: 10px;
 }
 
 .btn:hover {
@@ -108,9 +109,7 @@ body::before {
   border-radius: 10px;
   padding: 30px;
   transition: 0.3s ease;
-  text-decoration: none;
   color: white;
-  display: block;
 }
 
 .card:hover {
@@ -158,7 +157,6 @@ footer a:hover {
     font-size: 2rem;
   }
 }
-
 </style>
 </head>
 
@@ -174,12 +172,12 @@ footer a:hover {
   </p>
 
   <div class="button-group">
-    <a href="assets/Jibin_Jose_SOC_Analyst_Resume.pdf" class="btn" download>Download Resume</a>
-    <a href="https://github.com/Macmillan0O67" class="btn" target="_blank">GitHub</a>
-    <a href="https://github.com/Macmillan0O67/PROJECTS" class="btn" target="_blank">Projects</a>
-    <a href="https://github.com/Macmillan0O67/BLOGS" class="btn" target="_blank">Blog</a>
-    <a href="https://www.linkedin.com/in/jibin-jose-0667jj" class="btn" target="_blank">LinkedIn</a>
-    <a href="https://www.credly.com/users/jibin-jose.423bd65f" class="btn" target="_blank">Credly</a>
+    <a href="./assets/Jibin_Jose_SOC_Analyst_Resume.pdf" target="_blank" class="btn">Download Resume</a>
+    <a href="https://github.com/Macmillan0O67" target="_blank" class="btn">GitHub</a>
+    <a href="https://github.com/Macmillan0O67/PROJECTS" target="_blank" class="btn">Projects</a>
+    <a href="https://github.com/Macmillan0O67/BLOGS" target="_blank" class="btn">Blog</a>
+    <a href="https://www.linkedin.com/in/jibin-jose-0667jj" target="_blank" class="btn">LinkedIn</a>
+    <a href="https://www.credly.com/users/jibin-jose.423bd65f" target="_blank" class="btn">Credly</a>
   </div>
 </section>
 
@@ -189,82 +187,86 @@ footer a:hover {
   <div class="card">
     <p>
       SOC Analyst with hands-on experience in 24×7 SOC monitoring, alert triage,
-      log correlation, vulnerability assessment, and incident detection through
-      internship experience and a self-built SOC home lab.
-      <br><br>
-      Experienced with Splunk SIEM for real-time monitoring, detection rule creation,
-      and MITRE ATT&CK mapping.
-      <br><br>
-      CompTIA Security+ and EC-Council Certified SOC Analyst (CSA) certified,
-      seeking Tier 1 SOC Analyst / Blue Team roles.
+      log correlation, vulnerability assessment, and incident detection.
+      Experienced with Splunk SIEM, detection rule creation, and MITRE ATT&CK mapping.
+      CompTIA Security+ and EC-Council CSA certified.
     </p>
   </div>
 </section>
 
-<!-- PROJECTS -->
+<!-- SKILLS -->
 <section>
-  <h2 class="section-title">Projects</h2>
-
-  <div class="grid-3">
-
-    <a href="https://github.com/Macmillan0O67/PROJECTS/tree/main/%F0%9F%93%8D%2001-SOC-Home-Lab-SIEM"
-       target="_blank" class="card">
-      <h3>SOC Analyst Home Lab</h3>
-      <p>
-        Built a Splunk SIEM lab simulating real-world SOC monitoring.
-        Created detection rules for brute force and failed login attempts.
-        Mapped incidents to MITRE ATT&CK and documented remediation steps.
-      </p>
-    </a>
-
-    <a href="https://github.com/Macmillan0O67/PROJECTS/tree/main/%F0%9F%93%8D02-%F0%9F%9B%A1%EF%B8%8F%20Web%20Application%20Vulnerability%20Assessment%20%E2%80%93%20OWASP%20Top%2010"
-       target="_blank" class="card">
-      <h3>Web Application Vulnerability Assessment</h3>
-      <p>
-        Identified OWASP Top 10 vulnerabilities including SQL Injection and XSS.
-        Used Burp Suite and OpenVAS to perform testing and generate reports.
-      </p>
-    </a>
-
-    <a href="https://github.com/Macmillan0O67/PROJECTS/tree/main/%F0%9F%93%8D%2003-Phishing-Email-Analysis"
-       target="_blank" class="card">
-      <h3>Phishing Email Analysis</h3>
-      <p>
-        Performed email header analysis, URL investigation,
-        and documented findings in SOC-style incident reports.
-      </p>
-    </a>
-
-  </div>
-</section>
-
-<!-- CERTIFICATIONS -->
-<section>
-  <h2 class="section-title">Certifications</h2>
+  <h2 class="section-title">Technical Skills</h2>
   <div class="grid-3">
 
     <div class="card">
-      <h3>CompTIA Security+</h3>
-      <p>Network security, threat management, risk management, incident response.</p>
-      <br>
-      <a href="https://cp.certmetrics.com/CompTIA/en/public/verify/credential/34b130ee20174609bdfe4afd226360b7"
-         target="_blank" class="btn">Verify</a>
+      <h3>SOC Operations</h3>
+      <ul>
+        <li>24x7 SOC Monitoring</li>
+        <li>Alert Triage & Escalation</li>
+        <li>Incident Detection & Response</li>
+        <li>Log Correlation</li>
+        <li>Threat Hunting (Basic)</li>
+        <li>MITRE ATT&CK Mapping</li>
+        <li>Incident Documentation</li>
+      </ul>
     </div>
 
     <div class="card">
-      <h3>EC-Council Certified SOC Analyst (CSA)</h3>
-      <p>Focused on Tier 1 SOC operations, SIEM usage, and incident handling.</p>
-      <br>
-      <a href="https://aspen.eccouncil.org/VerifyBadge?&type=certification&a=sQ+cIn+W5iZXTTLXSvXKdf6KYpFVDsOMvapnUvWgJpI="
-         target="_blank" class="btn">Verify</a>
+      <h3>SIEM & Security Tools</h3>
+      <ul>
+        <li>Splunk SIEM</li>
+        <li>Wazuh</li>
+        <li>Burp Suite</li>
+        <li>OpenVAS</li>
+        <li>Wireshark</li>
+        <li>VirusTotal</li>
+        <li>Threat Intelligence Platforms</li>
+      </ul>
     </div>
 
     <div class="card">
-      <h3>Cisco Introduction to Cybersecurity</h3>
-      <p>Cybersecurity fundamentals, network defense, and threat awareness.</p>
-      <br>
-      <a href="https://www.credly.com/users/jibin-jose.423bd65f"
-         target="_blank" class="btn">Verify</a>
+      <h3>Networking & Systems</h3>
+      <ul>
+        <li>TCP/IP</li>
+        <li>DNS, DHCP</li>
+        <li>HTTP / HTTPS</li>
+        <li>SSL/TLS</li>
+        <li>Windows Event Logs</li>
+        <li>Linux Log Analysis</li>
+        <li>Firewall Basics</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Security Concepts</h3>
+      <ul>
+        <li>OWASP Top 10</li>
+        <li>Vulnerability Assessment</li>
+        <li>Phishing Analysis</li>
+        <li>Malware Basics</li>
+        <li>Risk Assessment</li>
+        <li>Access Control</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Cloud & Platforms</h3>
+      <ul>
+        <li>AWS Security Fundamentals</li>
+        <li>IAM Basics</li>
+        <li>Cloud Logging Concepts</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Programming & Databases</h3>
+      <ul>
+        <li>Python (Basic Scripting)</li>
+        <li>SQL</li>
+        <li>JavaScript Basics</li>
+        <li>MySQL</li>
+      </ul>
     </div>
 
   </div>
