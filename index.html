@@ -3,67 +3,66 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jibin Jose | Cyber Security Portfolio</title>
+<title>Jibin Jose | Cyber Security Expert</title>
+
 <link rel="stylesheet" href="style.css">
+
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<!-- Three.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+<!-- Particles -->
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
 </head>
 <body>
 
-<!-- HERO SECTION -->
-<section class="hero">
+<div id="particles-js"></div>
+<div class="cursor-glow"></div>
 
-    <div class="hero-content">
+<!-- HERO -->
+<section class="section hero">
 
+    <div class="hero-text">
         <h1 class="glitch" data-text="JIBIN JOSE">JIBIN JOSE</h1>
-        <p class="subtitle">SOC Analyst | Blue Team | Purple Team</p>
-
-        <div class="services">
-
-            <div class="service-card">Web Security</div>
-            <div class="service-card">Database Security</div>
-            <div class="service-card">Threat Detection</div>
-            <div class="service-card">Network Security</div>
-
-        </div>
-
+        <h2>SOC Analyst | Purple Team Enthusiast</h2>
+        <p>Provide Advanced Cyber Security Solutions</p>
+        <button class="btn">Explore</button>
     </div>
 
-    <!-- AVATAR -->
-    <div class="avatar-container">
-        <div class="avatar"></div>
-        <div class="cyber-ring"></div>
-    </div>
+    <div id="avatar3d"></div>
 
 </section>
 
-<!-- ADVANCED SECURITY SECTION -->
-<section class="about fade-section">
+<!-- SERVICES -->
+<section class="section services">
+    <h2 class="section-title">Cyber Expertise</h2>
 
-    <div class="about-left">
-        <h2>Provide Advanced Security For Advanced Threats</h2>
-        <p>
-            Certified SOC Analyst with hands-on experience in SIEM monitoring,
-            incident response, threat detection and vulnerability assessment.
-        </p>
-
-        <div class="features">
-            <div class="feature">Certified Security+ & CSA</div>
-            <div class="feature">MITRE ATT&CK Mapping</div>
-            <div class="feature">24x7 SOC Monitoring</div>
-        </div>
+    <div class="cards">
+        <div class="card">SIEM Monitoring</div>
+        <div class="card">Threat Detection</div>
+        <div class="card">MITRE ATT&CK Mapping</div>
+        <div class="card">Incident Response</div>
     </div>
 
-    <div class="shield-container">
-        <div class="shield"></div>
+    <div class="neon-line"></div>
+</section>
+
+<!-- DASHBOARD -->
+<section class="section dashboard">
+    <h2>Interactive Cyber Dashboard</h2>
+    <div class="dashboard-ui">
+        <div class="widget pulse"></div>
+        <div class="widget rotate"></div>
+        <div class="widget"></div>
     </div>
-
 </section>
 
-<!-- CONTACT SECTION -->
-<section class="contact fade-section">
-    <h2>Let's Work Together</h2>
-    <p>Email: jibinjosebiju@gmail.com</p>
-</section>
-
+<script src="avatar.js"></script>
 <script src="script.js"></script>
+
 </body>
 </html>
