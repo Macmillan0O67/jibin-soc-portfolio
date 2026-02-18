@@ -1,90 +1,53 @@
 body {
+    font-family: Arial, sans-serif;
     margin: 0;
-    background: black;
-    font-family: 'Courier New', monospace;
-    color: #00ff00;
+    background-color: #0f172a;
+    color: white;
 }
 
-.matrix-bg {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background: black;
-    z-index: -1;
+header {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(to right, #0ea5e9, #6366f1);
 }
 
-.terminal {
-    width: 90%;
-    max-width: 1100px;
-    margin: 40px auto;
-    background: #0d0d0d;
-    border: 1px solid #00ff00;
-    box-shadow: 0 0 20px #00ff00;
-}
-
-.terminal-header {
-    padding: 10px;
-    background: #111;
-}
-
-.dot {
-    height: 12px;
-    width: 12px;
-    border-radius: 50%;
-    display: inline-block;
-    margin-right: 5px;
-}
-
-.red { background: red; }
-.yellow { background: yellow; }
-.green { background: lime; }
-
-.terminal-body {
-    padding: 20px;
-    line-height: 1.6;
-}
-
-.prompt {
-    color: #00ff00;
-}
-
-.output {
-    color: #66ff66;
-    margin-bottom: 20px;
-}
-
-.cert-card {
-    border: 1px solid #00ff00;
-    padding: 15px;
-    margin: 10px 0;
-    transition: 0.3s;
-}
-
-.cert-card:hover {
-    background: #002200;
-    box-shadow: 0 0 15px #00ff00;
-}
-
-.cert-card a {
-    color: cyan;
+.btn {
+    background: white;
+    color: black;
+    padding: 10px 20px;
     text-decoration: none;
+    border-radius: 5px;
+}
+
+section {
+    padding: 40px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill-box {
+    background: #1e293b;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
 }
 
 .project {
-    margin: 20px 0;
+    background: #1e293b;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
 }
 
-.skills {
-    border-left: 3px solid #00ff00;
-    padding-left: 15px;
-    margin: 20px 0;
+a {
+    color: #38bdf8;
 }
 
-.log-feed {
-    background: #000;
-    height: 150px;
-    overflow: hidden;
-    font-size: 14px;
-    padding: 10px;
-    border: 1px solid #00ff00;
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111827;
 }
