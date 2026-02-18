@@ -2,146 +2,185 @@
 
 body {
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #0f172a;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0f172a, #020617);
     color: #e2e8f0;
-    line-height: 1.6;
+    overflow-x: hidden;
 }
 
-h1, h2, h3 {
-    margin-bottom: 15px;
+/* ===== HERO SECTION ===== */
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 10%;
+    min-height: 100vh;
+    position: relative;
 }
 
-section {
-    padding: 70px 10%;
+.hero-content {
+    max-width: 600px;
 }
 
-/* ===== HEADER ===== */
-
-header {
-    background: linear-gradient(135deg, #0f172a, #1e293b);
-    text-align: center;
-    padding: 100px 20px;
-}
-
-header h1 {
-    font-size: 3rem;
-    color: #38bdf8;
-}
-
-header p {
-    font-size: 1.2rem;
+.subtitle {
     color: #94a3b8;
-}
-
-.btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 25px;
-    border-radius: 6px;
-    background-color: #38bdf8;
-    color: white;
-    text-decoration: none;
-    transition: 0.3s ease;
-}
-
-.btn:hover {
-    background-color: #0ea5e9;
-}
-
-/* ===== SECTIONS ===== */
-
-.section-title {
-    text-align: center;
-    font-size: 2rem;
-    color: #38bdf8;
     margin-bottom: 40px;
 }
 
-/* ===== GRID CARDS ===== */
+/* ===== GLITCH EFFECT ===== */
 
-.grid, .cert-container {
+.glitch {
+    font-size: 3rem;
+    color: #38bdf8;
+    position: relative;
+}
+
+.glitch::before,
+.glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+
+.glitch::before {
+    color: #00ffff;
+    animation: glitch 2s infinite linear alternate-reverse;
+}
+
+.glitch::after {
+    color: #ff00ff;
+    animation: glitch 1.5s infinite linear alternate-reverse;
+}
+
+@keyframes glitch {
+    0% { transform: translate(0); }
+    20% { transform: translate(-2px, 2px); }
+    40% { transform: translate(-2px, -2px); }
+    60% { transform: translate(2px, 2px); }
+    80% { transform: translate(2px, -2px); }
+    100% { transform: translate(0); }
+}
+
+/* ===== SERVICE CARDS ===== */
+
+.services {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
+    grid-template-columns: repeat(2, 200px);
+    gap: 20px;
 }
 
-/* ===== SKILL CARDS ===== */
-
-.card {
-    background-color: #1e293b;
+.service-card {
     padding: 20px;
+    background: rgba(56, 189, 248, 0.05);
+    border: 1px solid #38bdf8;
     border-radius: 10px;
-    transition: 0.3s ease;
+    transition: 0.4s;
 }
 
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 20px rgba(56,189,248,0.4);
 }
 
-/* ===== PROJECT CARDS ===== */
+/* ===== AVATAR ===== */
 
-.project-card {
-    background-color: #1e293b;
-    padding: 25px;
-    border-radius: 12px;
-    transition: 0.3s ease;
+.avatar-container {
+    position: relative;
 }
 
-.project-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+.avatar {
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+    border-radius: 50%;
+    position: relative;
 }
 
-/* ===== CERTIFICATION CARDS ===== */
-
-.cert-card {
-    background-color: #1e293b;
-    padding: 25px;
-    border-radius: 12px;
-    transition: 0.3s ease;
+.avatar::before {
+    content: "JJ";
+    position: absolute;
+    font-size: 4rem;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.cert-card h3 {
-    color: #38bdf8;
+.cyber-ring {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    border: 2px dashed #38bdf8;
+    border-radius: 50%;
+    top: -50px;
+    left: -50px;
+    animation: rotate 10s linear infinite;
 }
 
-.cert-card a {
-    display: inline-block;
-    margin-top: 10px;
-    color: #38bdf8;
-    text-decoration: none;
-    font-weight: 500;
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
 }
 
-.cert-card a:hover {
-    text-decoration: underline;
+/* ===== ABOUT SECTION ===== */
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 10%;
 }
 
-.cert-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+.features {
+    margin-top: 20px;
 }
 
-/* ===== FOOTER ===== */
+.feature {
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #1e293b;
+    border-left: 4px solid #38bdf8;
+}
 
-footer {
-    background-color: #0f172a;
+/* ===== SHIELD ANIMATION ===== */
+
+.shield-container {
+    position: relative;
+}
+
+.shield {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #38bdf8 10%, #0f172a 70%);
+    box-shadow: 0 0 40px rgba(56,189,248,0.5);
+    animation: pulse 2s infinite ease-in-out;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* ===== CONTACT ===== */
+
+.contact {
     text-align: center;
-    padding: 30px;
-    color: #64748b;
+    padding: 80px 10%;
 }
 
-/* ===== FADE IN ANIMATION ===== */
+/* ===== SCROLL TRANSITION ===== */
 
-.fade-in {
+.fade-section {
     opacity: 0;
-    transform: translateY(20px);
-    transition: all 0.8s ease;
+    transform: translateY(50px);
+    transition: all 1s ease;
 }
 
-.fade-in.visible {
+.fade-section.visible {
     opacity: 1;
     transform: translateY(0);
 }
