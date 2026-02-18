@@ -1,32 +1,23 @@
-// PARTICLES
-particlesJS.load('particles-js', 'particles.json');
+const logs = [
+"[INFO] Splunk Alert: Failed Login Attempt Detected",
+"[INFO] Investigating Suspicious IP 192.168.1.45",
+"[WARNING] SQL Injection Pattern Detected",
+"[INFO] Phishing Email Classified as Malicious",
+"[ALERT] Brute Force Attempt Blocked",
+"[INFO] MITRE ATT&CK T1110 Mapped"
+];
 
-// CURSOR GLOW
-document.addEventListener('mousemove', (e) => {
-    const glow = document.querySelector('.cursor-glow');
-    glow.style.left = e.clientX + 'px';
-    glow.style.top = e.clientY + 'px';
-});
+const logFeed = document.getElementById("logFeed");
 
-// SCROLL NEON LINE
-gsap.registerPlugin(ScrollTrigger);
+function addLog() {
+    const randomLog = logs[Math.floor(Math.random() * logs.length)];
+    const p = document.createElement("p");
+    p.textContent = randomLog;
+    logFeed.appendChild(p);
 
-gsap.to(".neon-line", {
-    width: "100%",
-    scrollTrigger: {
-        trigger: ".services",
-        start: "top center",
-        end: "bottom center",
-        scrub: true
+    if (logFeed.children.length > 8) {
+        logFeed.removeChild(logFeed.firstChild);
     }
-});
+}
 
-// GLITCH PAGE TRANSITION
-document.querySelector(".btn").addEventListener("click", () => {
-    gsap.to(".hero", {
-        opacity: 0,
-        duration: 0.5,
-        y: -100,
-        ease: "power2.inOut"
-    });
-});
+setInterval(addLog, 1500);
