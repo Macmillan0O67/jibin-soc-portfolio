@@ -1,132 +1,90 @@
 body {
     margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: #0a0f1c;
-    color: white;
-    overflow-x: hidden;
+    background: black;
+    font-family: 'Courier New', monospace;
+    color: #00ff00;
 }
 
-/* PARTICLES */
-#particles-js {
+.matrix-bg {
     position: fixed;
     width: 100%;
     height: 100%;
+    background: black;
     z-index: -1;
 }
 
-/* CURSOR GLOW */
-.cursor-glow {
-    position: fixed;
-    width: 300px;
-    height: 300px;
-    background: radial-gradient(circle, rgba(0,255,255,0.2), transparent 70%);
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-    z-index: 999;
+.terminal {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+    background: #0d0d0d;
+    border: 1px solid #00ff00;
+    box-shadow: 0 0 20px #00ff00;
 }
 
-/* SECTIONS */
-.section {
-    min-height: 100vh;
-    padding: 100px 10%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.terminal-header {
+    padding: 10px;
+    background: #111;
 }
 
-/* HERO */
-.hero-text h1 {
-    font-size: 4rem;
+.dot {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
 }
 
-.glitch {
-    position: relative;
-    color: cyan;
+.red { background: red; }
+.yellow { background: yellow; }
+.green { background: lime; }
+
+.terminal-body {
+    padding: 20px;
+    line-height: 1.6;
 }
 
-.glitch::before,
-.glitch::after {
-    content: attr(data-text);
-    position: absolute;
-    left: 0;
+.prompt {
+    color: #00ff00;
 }
 
-.glitch::before {
-    color: magenta;
-    animation: glitch 1s infinite;
+.output {
+    color: #66ff66;
+    margin-bottom: 20px;
 }
 
-@keyframes glitch {
-    0% { transform: translate(2px,0); }
-    50% { transform: translate(-2px,0); }
-    100% { transform: translate(2px,0); }
-}
-
-/* BUTTON */
-.btn {
-    padding: 12px 30px;
-    background: transparent;
-    border: 1px solid cyan;
-    color: cyan;
-    cursor: pointer;
+.cert-card {
+    border: 1px solid #00ff00;
+    padding: 15px;
+    margin: 10px 0;
     transition: 0.3s;
 }
 
-.btn:hover {
-    background: cyan;
-    color: black;
+.cert-card:hover {
+    background: #002200;
+    box-shadow: 0 0 15px #00ff00;
 }
 
-/* CARDS */
-.cards {
-    display: flex;
-    gap: 30px;
+.cert-card a {
+    color: cyan;
+    text-decoration: none;
 }
 
-.card {
-    padding: 40px;
-    border: 1px solid cyan;
-    transition: 0.4s;
+.project {
+    margin: 20px 0;
 }
 
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 0 20px cyan;
+.skills {
+    border-left: 3px solid #00ff00;
+    padding-left: 15px;
+    margin: 20px 0;
 }
 
-/* NEON LINE */
-.neon-line {
-    height: 3px;
-    width: 0;
-    background: cyan;
-    margin-top: 50px;
-}
-
-/* DASHBOARD */
-.dashboard-ui {
-    display: flex;
-    gap: 40px;
-}
-
-.widget {
-    width: 150px;
+.log-feed {
+    background: #000;
     height: 150px;
-    border: 1px solid cyan;
-}
-
-.pulse {
-    animation: pulse 2s infinite;
-}
-
-.rotate {
-    animation: rotate 5s linear infinite;
-}
-
-@keyframes pulse {
-    50% { transform: scale(1.1); }
-}
-
-@keyframes rotate {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
+    overflow: hidden;
+    font-size: 14px;
+    padding: 10px;
+    border: 1px solid #00ff00;
 }
