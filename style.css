@@ -1,185 +1,37 @@
-/* ===== GLOBAL ===== */
-
 body {
+    font-family: Arial, sans-serif;
     margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(135deg, #0f172a, #020617);
-    color: #e2e8f0;
-    overflow-x: hidden;
+    background-color: #0d1117;
+    color: #e6edf3;
 }
 
-/* ===== HERO SECTION ===== */
-
-.hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 80px 10%;
-    min-height: 100vh;
-}
-
-.hero-content {
-    max-width: 600px;
-}
-
-.subtitle {
-    color: #94a3b8;
-    margin-bottom: 40px;
-}
-
-/* ===== GLITCH EFFECT ===== */
-
-.glitch {
-    font-size: 3rem;
-    color: #38bdf8;
-    position: relative;
-}
-
-.glitch::before,
-.glitch::after {
-    content: attr(data-text);
-    position: absolute;
-    left: 0;
-    width: 100%;
-}
-
-.glitch::before {
-    color: #00ffff;
-    animation: glitch 2s infinite linear alternate-reverse;
-}
-
-.glitch::after {
-    color: #ff00ff;
-    animation: glitch 1.5s infinite linear alternate-reverse;
-}
-
-@keyframes glitch {
-    0% { transform: translate(0); }
-    20% { transform: translate(-2px, 2px); }
-    40% { transform: translate(-2px, -2px); }
-    60% { transform: translate(2px, 2px); }
-    80% { transform: translate(2px, -2px); }
-    100% { transform: translate(0); }
-}
-
-/* ===== SERVICE CARDS ===== */
-
-.services {
-    display: grid;
-    grid-template-columns: repeat(2, 200px);
-    gap: 20px;
-}
-
-.service-card {
-    padding: 20px;
-    background: rgba(56, 189, 248, 0.05);
-    border: 1px solid #38bdf8;
-    border-radius: 10px;
-    transition: 0.4s;
-}
-
-.service-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 0 20px rgba(56,189,248,0.4);
-}
-
-/* ===== AVATAR ===== */
-
-.avatar-container {
-    position: relative;
-}
-
-.avatar {
-    width: 250px;
-    height: 250px;
-    background: linear-gradient(135deg, #38bdf8, #0ea5e9);
-    border-radius: 50%;
-    position: relative;
-}
-
-.avatar::before {
-    content: "JJ";
-    position: absolute;
-    font-size: 4rem;
-    color: white;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.cyber-ring {
-    position: absolute;
-    width: 350px;
-    height: 350px;
-    border: 2px dashed #38bdf8;
-    border-radius: 50%;
-    top: -50px;
-    left: -50px;
-    animation: rotate 10s linear infinite;
-}
-
-@keyframes rotate {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
-}
-
-/* ===== ABOUT SECTION ===== */
-
-.about {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 100px 10%;
-}
-
-.features {
-    margin-top: 20px;
-}
-
-.feature {
-    margin-bottom: 10px;
-    padding: 10px;
-    background: #1e293b;
-    border-left: 4px solid #38bdf8;
-}
-
-/* ===== SHIELD ANIMATION ===== */
-
-.shield-container {
-    position: relative;
-}
-
-.shield {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    background: radial-gradient(circle, #38bdf8 10%, #0f172a 70%);
-    box-shadow: 0 0 40px rgba(56,189,248,0.5);
-    animation: pulse 2s infinite ease-in-out;
-}
-
-@keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-    100% { transform: scale(1); }
-}
-
-/* ===== CONTACT ===== */
-
-.contact {
+header {
+    background-color: #161b22;
     text-align: center;
-    padding: 80px 10%;
+    padding: 30px;
 }
 
-/* ===== SCROLL TRANSITION ===== */
-
-.fade-section {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: all 1s ease;
+section {
+    padding: 30px;
+    border-bottom: 1px solid #30363d;
 }
 
-.fade-section.visible {
-    opacity: 1;
-    transform: translateY(0);
+h1, h2 {
+    color: #58a6ff;
 }
+
+a {
+    color: #2ea043;
+    text-decoration: none;
+}
+
+.cert {
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #161b22;
+}
+
