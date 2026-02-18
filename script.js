@@ -1,17 +1,32 @@
-// Smooth scroll reveal animation
+// PARTICLES
+particlesJS.load('particles-js', 'particles.json');
 
-const sections = document.querySelectorAll('.fade-section');
-
-const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-        }
-    });
-}, {
-    threshold: 0.2
+// CURSOR GLOW
+document.addEventListener('mousemove', (e) => {
+    const glow = document.querySelector('.cursor-glow');
+    glow.style.left = e.clientX + 'px';
+    glow.style.top = e.clientY + 'px';
 });
 
-sections.forEach(section => {
-    observer.observe(section);
+// SCROLL NEON LINE
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.to(".neon-line", {
+    width: "100%",
+    scrollTrigger: {
+        trigger: ".services",
+        start: "top center",
+        end: "bottom center",
+        scrub: true
+    }
+});
+
+// GLITCH PAGE TRANSITION
+document.querySelector(".btn").addEventListener("click", () => {
+    gsap.to(".hero", {
+        opacity: 0,
+        duration: 0.5,
+        y: -100,
+        ease: "power2.inOut"
+    });
 });
