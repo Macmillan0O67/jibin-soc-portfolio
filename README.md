@@ -36,9 +36,53 @@ https://aspen.eccouncil.org/VerifyBadge?&type=certification&a=sQ+cIn+W5iZXTTLXSv
 
 ---
 
+### 🛡 ISO/IEC 27001:2022 Lead Auditor
+🔗 Credly Badge:  
+https://www.credly.com/earner/earned/badge/62d4866b-fc81-4e7f-ba09-f38ff05a264b
+
+ ---
+ 
 ### 🌐 Cisco Introduction to Cybersecurity
 🔗 Credly Badge:  
 https://www.credly.com/badges/183347d4-e134-4124-a2f2-2f43c3217762/public_url  
+
+---
+
+### 🌐 Networking Basics
+🔗 Credly Badge:  
+https://www.credly.com/earner/earned/badge/7738141b-8af1-4c8a-8c11-29cd72da838b
+
+---
+
+### 🌐 Networking Devices and Initial Configuration
+🔗 Credly Badge:  
+https://www.credly.com/badges/7738141b-8af1-4c8a-8c11-29cd72da838b/public_url
+
+---
+
+### 🌐 Network Defense
+🔗 Credly Badge:  
+https://www.credly.com/earner/earned/badge/7a6b80f6-6769-4a65-8aad-63ab951384aa
+
+---
+
+
+### 🌐 Endpoint Security
+🔗 Credly Badge:  
+https://www.credly.com/earner/earned/badge/f3def956-dd1d-4d8b-9cb4-aebea757c727
+
+---
+
+### 🌐 Cyber Threat Management
+🔗 Credly Badge:  
+https://www.credly.com/earner/earned/badge/e774aa37-24a3-42ac-a949-ef758e57dac8
+
+---
+
+
+### 🌐 Junior Cybersecurity Analyst Career Path
+🔗 Credly Badge:  
+https://www.credly.com/earner/earned/badge/9ad80b59-6599-4373-8d80-6a363d7b0788
 
 ---
 
